@@ -1,18 +1,26 @@
 $(document).ready(function(){
   $("form").submit(function(event){
-    var gender = $("select#gender").val();
-    var attractive = parseInt($("select#attractive").val());
-    var describe = parseInt($("select#describe").val());
+    var money = $("select#money").val();
+    var mountain = parseInt($("select#mountain").val());
+    var city = parseInt($("select#city").val());
+    var canoe = parseInt($("select#canoe").val());
+    var explore = parseInt($("select#explore").val());
     var drink = parseInt($("select#drink").val());
-    var prefer = parseInt($("select#prefer").val());
-    var cigarette = parseInt($("select#cigarette").val());
-    var total = attractive + describe + drink + prefer + cigarette;
-    if (gender === "male" && total >= 3) {
+    var total = mountain + city + canoe + explore + drink;
+    if (money === "money1" && total >= 3) {
       $(".roger").show();
-    } else if (gender === "male" && total < 3) {
+    } else if (money === "money1" && total < 3) {
       $(".pete").show();
-    } else if (gender === "female" && total >= 3) {
-      $(".joan").show();
+    } else if (money === "money2" && total >= 3) {
+      $(".pete").show();
+    } else if (money === "money2" && total < 3) {
+      $(".pete").show();
+    } else if (money === "money3" && total >= 3) {
+      $(".pete").show();
+    } else if (money === "money3" && total < 3) {
+      $(".pete").show();
+    } else if (money === "money4" && total >= 3) {
+      $(".pete").show();
     } else {
       $(".peggy").show()
     }
