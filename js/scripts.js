@@ -8,21 +8,21 @@ $(document).ready(function(){
     var drink = parseInt($("select#drink").val());
     var total = mountain + city + canoe + explore + drink;
     if (money === "money1" && total >= 3) {
-      $(".roger").show();
+      $(".ashville").show();
     } else if (money === "money1" && total < 3) {
-      $(".pete").show();
+      $(".obx").show();
     } else if (money === "money2" && total >= 3) {
-      $(".pete").show();
+      $(".patagonia").show();
     } else if (money === "money2" && total < 3) {
-      $(".pete").show();
+      $(".mexico").show();
     } else if (money === "money3" && total >= 3) {
-      $(".pete").show();
+      $(".germany").show();
     } else if (money === "money3" && total < 3) {
-      $(".pete").show();
+      $(".venice").show();
     } else if (money === "money4" && total >= 3) {
-      $(".pete").show();
+      $(".finland").show();
     } else {
-      $(".peggy").show()
+      $(".ibiza").show()
     }
     event.preventDefault();
   });
