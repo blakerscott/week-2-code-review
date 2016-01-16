@@ -1,3 +1,13 @@
 .ashville, .obx, .patagonia, .mexico, .germany, .venice, .finland, .ibiza {
   display: none;
 }
+
+footer {
+
+  text-align: center;
+  float: none;
+}
+
+body {
+  background-color: #ffe066
+}
